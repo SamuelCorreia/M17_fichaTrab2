@@ -4,6 +4,8 @@ public class Ponto2D {
     private int x;
     private int y;
     private int resultado;
+    private int distx;
+    private int disty;
     
     /**
      * Construtor Ponto2D sem parâmetros
@@ -60,14 +62,22 @@ public class Ponto2D {
      * Método distancia que calcula a 
      * distância entre os dois pontos
      * @param a Segundo ponto
-     * @return a diferença entre os dois valores
+     * @return a distância entre os dois pontos
      */
     public double distancia(Ponto2D a){
         // Falta fazer este método.
-        if(x<=y)
-            resultado = y-x;
+        if(x<=a.getX())
+            distx = a.getX()-x;
         else
-            resultado = x-y;
+            distx = x-a.getX();
+        
+        if(y<=a.getY())
+            disty = a.getY()-y;
+        else
+            disty = y-a.getY();
+        
+        resultado = (int) Math.hypot(disty, distx);
+        
         return resultado;
     }
     
@@ -77,6 +87,6 @@ public class Ponto2D {
      */
     @Override
     public String toString() {
-        return "Ponto2D{" + "x = " + x + "; y = " + y + '}';
+        return "Ponto2D {" + "x = " + x + "; y = " + y + '}';
     }
 }
