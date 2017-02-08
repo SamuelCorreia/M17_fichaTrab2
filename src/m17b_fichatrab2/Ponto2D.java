@@ -15,6 +15,8 @@ public class Ponto2D {
     
     /**
      * Construtor Ponto2D com parâmetros
+     * @param x coordenada x
+     * @param y coordenada y
      */
     public Ponto2D(int x, int y){
         this.x = x;
@@ -23,6 +25,7 @@ public class Ponto2D {
     
     /**
      * Setter de X
+     * @param x coordenada x
      */
     public void setX(int x) {
         this.x = x;
@@ -30,20 +33,23 @@ public class Ponto2D {
     
     /**
      * Setter de Y
+     * @param y coordenada y
      */
     public void setY(int y) {
         this.y = y;
     }
     
     /**
-     * Getter de X
+     * Getter de x
+     * @return valor da coordenada x
      */
     public int getX() {
         return x;
     }
     
     /**
-     * Getter de Y
+     * Getter de y
+     * @return valor da coordenada y
      */
     public int getY() {
         return y;
@@ -53,6 +59,8 @@ public class Ponto2D {
     /**
      * Método distancia que calcula a 
      * distância entre os dois pontos
+     * @param a Segundo ponto
+     * @return a diferença entre os dois valores
      */
     public double distancia(Ponto2D a){
         // Falta fazer este método.
@@ -65,6 +73,7 @@ public class Ponto2D {
     
     /**
      * Método toString para retornar os valores de x e y 
+     * @return toString de x e y
      */
     @Override
     public String toString() {
