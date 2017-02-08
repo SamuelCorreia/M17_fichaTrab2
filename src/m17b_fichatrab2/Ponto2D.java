@@ -1,6 +1,9 @@
 package m17b_fichatrab2;
 
 public class Ponto2D {
+    /**
+     * Declaração das coordenadas x e y
+     */
     private int x;
     private int y;
     
