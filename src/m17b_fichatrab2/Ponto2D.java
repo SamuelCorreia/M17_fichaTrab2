@@ -3,9 +3,6 @@ package m17b_fichatrab2;
 public class Ponto2D {
     private int x;
     private int y;
-    private int resultado;
-    private int distx;
-    private int disty;
     
     /**
      * Construtor Ponto2D sem parâmetros
@@ -65,6 +62,10 @@ public class Ponto2D {
      * @return a distância entre os dois pontos
      */
     public double distancia(Ponto2D a){
+        int resultado;
+        int distx;
+        int disty;
+        
         // Falta fazer este método.
         if(x<=a.getX())
             distx = a.getX()-x;
@@ -76,9 +77,7 @@ public class Ponto2D {
         else
             disty = y-a.getY();
         
-        resultado = (int) Math.hypot(disty, distx);
-        
-        return resultado;
+        return (int)Math.hypot(disty, distx);
     }
     
     /**
