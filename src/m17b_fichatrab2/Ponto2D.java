@@ -66,7 +66,6 @@ public class Ponto2D {
         int distx;
         int disty;
         
-        // Falta fazer este método.
         if(x<=a.getX())
             distx = a.getX()-x;
         else
